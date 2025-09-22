@@ -1,0 +1,42 @@
+COMP2404B Assignment #5 README
+
+Program Author1: Osepiribo Brian West
+StudentID:       100977921
+
+Program Author2: Mahdi Mohammed
+StudentID:       100703016
+
+Purpose: Simulates a store transaction system.
+
+Source Files: InvControl.cc, Store.cc, UI.cc, ProdListt.cc, CustArray.cc, PurchArray.cc, Product.cc, Customer.cc, Purchase.cc, Order.cc, OrderArray.cc, OrderServer.cc, NonTaxable.cc, Taxable.cc, NonPerishable.cc, Perishable.cc, Dairy.cc, Meat.cc, CoffeeTea.cc, Bakery.cc, MiscGoods.cc, Main.cc
+
+Header File: defs.h, InvControl.h, Store.h, UI.h, ProdArray.h, CustArray.h, PurchArray.h, Product.h, Customer.h, Purchase.h, Order.h, OrderArray.h, OrderServer.h, NonTaxable.h, Taxable.h, NonPerishable.h, Perishable.h, Dairy.h, Meat.h, CoffeeTea.h, Bakery.h, MiscGoods.h 
+
+Makefile: Makefile
+
+Compilation command: make
+
+Launch Operations: 
+1. Open the terminal and traverse to where AssignmentOne is located
+2. Type make
+3. Run the program by "./cushop -c" in the terminal to call the Cashier process.
+4. Run the progam by "./cushop -a" in the terminal to call the Admin process.
+             
+
+Operating Instructions: Cashier process:
+1. User will be in Cashier menu and will be prompted to choose between product purchase feature, product return (not implemented yet) or 0 to exit the program.
+2. User has the option to type 42 which is the MAGIC_NUM which will print all the store stock, customer, and prints order.
+3. If user selected product purchase feature then user will be prompted to enter the customer id.
+4. After entering the customer id you will be asked to enter a series of product ids to be purchased by the customer (terminated by 0).
+5. If user terminates by 0, user will be brought back to cashier menu in which they can select any option.
+		               
+
+ Admin process:     
+1. User will be in Admin menu and will be prompted to choose between add new product feature, add more inventory feature, remove product feature,print inventory feature, print customers feature, or 0 to exit the program.
+2. If user selects the add new product feature, then user will be prompted to enter the right information regarding a new product.
+3. If user selects the add more inventory feature, they will be prompted to select the right product id. After entering the product id user will be asked to enter the amount of units to increment the particular product.
+4. If user selects the remove product feature, then user will be prompted to select the right product id.
+5. If the user wants to stop adding more inventory, they should terminate by 0 which will bring them back to the admin menu.
+6. If the user enters the print inventory feature, all products and their information will be displayed.
+7. If the user enters the print customers feature, all customers and their information will be displayed.
+8. If the user enters the print orders feature, all orders and their information will be displayed.		               
